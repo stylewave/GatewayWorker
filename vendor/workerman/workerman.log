@@ -1,0 +1,97 @@
+2022-02-18 17:34:27 pid:1 ArgumentCountError: Too few arguments to function GatewayWorker\Lib\Gateway::sendToClient(), 1 passed in C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\Events.php on line 54 and at least 2 expected in C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\Lib\Gateway.php:145
+Stack trace:
+#0 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\Events.php(54): GatewayWorker\Lib\Gateway::sendToClient('hello,\xE4\xBD\xA0\xE7\x9A\x84\xE4\xBF\xA1...')
+#1 [internal function]: Events::onMessage('7f0000011216000...', '\xE6\x88\x91\xE6\x98\xAF\xE5\xB0\x8F\xE8\x8E\xAB')
+#2 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000011216000...', '\xE6\x88\x91\xE6\x98\xAF\xE5\xB0\x8F\xE8\x8E\xAB')
+#3 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#5 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#6 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#8 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#9 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#10 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-02-18 17:48:16 pid:1 Error: Class 'Db' not found in C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\Events.php:43
+Stack trace:
+#0 [internal function]: Events::onConnect('7f0000011216000...')
+#1 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onConne...', '7f0000011216000...')
+#2 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#4 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#7 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2022-02-18 17:48:54 pid:1 Error: Class 'Db' not found in C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\Events.php:43
+Stack trace:
+#0 [internal function]: Events::onConnect('7f0000011216000...')
+#1 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onConne...', '7f0000011216000...')
+#2 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#4 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#5 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#6 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#7 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#8 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#9 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#10 {main}
+2022-02-18 17:50:12 pid:1 PDOException: SQL:SELECT * FROM `dz_guests_token` SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bracelet.dz_guests_token' doesn't exist in C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\Lib\DbConnection.php:1766
+Stack trace:
+#0 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\Lib\DbConnection.php(1894): GatewayWorker\Lib\DbConnection->execute('SELECT * FROM `...', Array)
+#1 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\Events.php(64): GatewayWorker\Lib\DbConnection->row()
+#2 [internal function]: Events::onMessage('7f0000011216000...', '\xE6\x88\x91\xE6\x98\xAF\xE5\xB0\x8F\xE8\x8E\xAB')
+#3 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(408): call_user_func('Events::onMessa...', '7f0000011216000...', '\xE6\x88\x91\xE6\x98\xAF\xE5\xB0\x8F\xE8\x8E\xAB')
+#4 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#6 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#7 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#9 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#10 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#11 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2022-02-19 09:41:50 pid:1 Error: Class 'GatewayWorker\Lib\StoreDriver\Redis' not found in C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\Lib\Store.php:78
+Stack trace:
+#0 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\Events.php(47): GatewayWorker\Lib\Store::instance('myredis')
+#1 [internal function]: Events::onConnect('7f0000011216000...')
+#2 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onConne...', '7f0000011216000...')
+#3 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#5 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#6 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#8 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#9 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#10 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-02-19 09:49:33 pid:1 Error: Class 'GatewayWorker\Lib\StoreDriver\Redis' not found in C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\Lib\Store.php:78
+Stack trace:
+#0 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\Events.php(47): GatewayWorker\Lib\Store::instance('myredis')
+#1 [internal function]: Events::onConnect('7f0000011216000...')
+#2 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onConne...', '7f0000011216000...')
+#3 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#5 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#6 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#8 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#9 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#10 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
+2022-02-19 09:55:06 pid:1 Error: Class 'GatewayWorker\Lib\StoreDriver\Redis' not found in C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\Lib\Store.php:78
+Stack trace:
+#0 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\Events.php(48): GatewayWorker\Lib\Store::instance('myredis')
+#1 [internal function]: Events::onConnect('7f0000011216000...')
+#2 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onConne...', '7f0000011216000...')
+#3 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(638): GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#5 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(2417): Workerman\Events\Select->loop()
+#6 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#7 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1416): GatewayWorker\BusinessWorker->run()
+#8 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(1359): Workerman\Worker::forkWorkersForWindows()
+#9 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\vendor\workerman\workerman\Worker.php(549): Workerman\Worker::forkWorkers()
+#10 C:\Users\Administrator\Desktop\图片\程序员\冰墩墩\GatewayWorker\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#11 {main}
